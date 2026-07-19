@@ -26,6 +26,7 @@
     </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="/" data-page="home"><i class="fa-solid fa-house icon"></i>Home</a></li>
+      <li><a href="blog" data-page="blog"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
       <li><a href="about" data-page="about"><i class="fa-solid fa-user icon"></i>About</a></li>
       <li><a href="education" data-page="education"><i class="fa-solid fa-graduation-cap icon"></i>Education</a></li>
       <li><a href="experience" data-page="experience"><i class="fa-solid fa-briefcase icon"></i>Experience</a></li>
@@ -55,8 +56,8 @@
           <a href="mailto:habtamu.molla@epsu.edu.et"><i class="fa-solid fa-envelope"></i>habtamu.molla@epsu.edu.et</a>
           <a href="mailto:habtamumullu@gmail.com"><i class="fa-solid fa-envelope"></i>habtamumullu@gmail.com</a>
           <a href="tel:+251975195143"><i class="fa-solid fa-phone"></i>+251 975 195 143</a>
-          <a href="https://wa.me/251975195143" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp &mdash; @Habtemariam</a>
-          <a href="https://t.me/habtemaryiam" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i>Telegram &mdash; @habtemaryiam</a>
+          <a href="https://wa.me/251975195143" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+          <a href="https://t.me/habtemaryiam" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i>Telegram</a>
           <a href="https://web.facebook.com/habtamu.molla.3133" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i>Facebook</a>
         </div>
       </div>
@@ -83,27 +84,42 @@
       <h2>Prefer to write it out?</h2>
       <p>Fill this in and it opens a pre-filled email in your own mail app, addressed straight to me &mdash; nothing is stored or sent anywhere else.</p>
     </div>
-    <form class="contact-form" id="contactForm" data-to="habtamumullu@gmail.com" style="max-width:640px;">
-      <div class="form-row">
-        <label for="cf-name">Your Name</label>
-        <input type="text" id="cf-name" name="name" placeholder="Jane Doe" required>
+    <div class="grid-2">
+      <form class="contact-form" id="contactForm" data-to="habtamumullu@gmail.com">
+        <div class="form-row">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Jane Doe" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Your Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="jane@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="Let's work together">
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="Tell me a bit about the role or project&hellip;" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i>Send Message</button>
+        <div class="form-status" id="cf-status"></div>
+        <p class="form-note"><i class="fa-solid fa-circle-info"></i>This opens your email app with the message ready to send to habtamumullu@gmail.com.</p>
+      </form>
+      <div class="card" style="align-self:flex-start;">
+        <div class="card-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>What to expect</h3>
+        <p>I read every message personally and usually reply within 1&ndash;2 business days.</p>
+        <div class="tag-row" style="margin:16px 0 20px;">
+          <span class="tag">Full Stack Roles</span><span class="tag">Research Collaboration</span><span class="tag">Digitalization Training</span><span class="tag">SaaS Engineering</span>
+        </div>
+        <p style="margin-bottom:14px;">In a hurry? Reach me directly instead:</p>
+        <div class="quick-links" style="flex-direction:column;align-items:flex-start;gap:12px;">
+          <a href="mailto:habtamumullu@gmail.com"><i class="fa-solid fa-envelope"></i>habtamumullu@gmail.com</a>
+          <a href="https://wa.me/251975195143" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+        </div>
       </div>
-      <div class="form-row">
-        <label for="cf-email">Your Email</label>
-        <input type="email" id="cf-email" name="email" placeholder="jane@example.com" required>
-      </div>
-      <div class="form-row">
-        <label for="cf-subject">Subject</label>
-        <input type="text" id="cf-subject" name="subject" placeholder="Let's work together">
-      </div>
-      <div class="form-row">
-        <label for="cf-message">Message</label>
-        <textarea id="cf-message" name="message" placeholder="Tell me a bit about the role or project&hellip;" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i>Send Message</button>
-      <div class="form-status" id="cf-status"></div>
-      <p class="form-note"><i class="fa-solid fa-circle-info"></i>This opens your email app with the message ready to send to habtamumullu@gmail.com.</p>
-    </form>
+    </div>
   </div>
 </section>
 
@@ -161,6 +177,8 @@
       </div>
       <div class="footer-col">
         <h5>Navigate</h5>
+        <a href="/"><i class="fa-solid fa-house icon"></i>Home</a>
+        <a href="blog"><i class="fa-solid fa-newspaper icon"></i>Blog</a>
         <a href="about"><i class="fa-solid fa-user icon"></i>About</a>
         <a href="education"><i class="fa-solid fa-graduation-cap icon"></i>Education</a>
         <a href="experience"><i class="fa-solid fa-briefcase icon"></i>Experience</a>

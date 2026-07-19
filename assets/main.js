@@ -48,4 +48,23 @@ document.addEventListener('DOMContentLoaded', function () {
       window.location.href = mailto;
     });
   }
+
+  // Blog/news relative timestamps ("3 days ago") computed from data-timestamp
+  document.querySelectorAll('.js-relative-time').forEach(function (el) {
+    var iso = el.getAttribute('data-timestamp');
+    if (!iso) return;
+    var then = new Date(iso);
+    var diffMs = new Date() - then;
+    var min = Math.floor(diffMs / 60000);
+    var hr = Math.floor(min / 60);
+    var day = Math.floor(hr / 24);
+    var label = '';
+    if (diffMs < 0) { label = ''; }
+    else if (min < 1) { label = 'just now'; }
+    else if (min < 60) { label = min + (min === 1 ? ' minute ago' : ' minutes ago'); }
+    else if (hr < 24) { label = hr + (hr === 1 ? ' hour ago' : ' hours ago'); }
+    else if (day < 30) { label = day + (day === 1 ? ' day ago' : ' days ago'); }
+    var badge = el.querySelector('.js-relative-label');
+    if (badge && label) { badge.textContent = '\u00b7 ' + label; }
+  });
 });
