@@ -43,101 +43,217 @@
   <div class="wrap">
     <span class="eyebrow mono"><i class="fa-solid fa-newspaper icon"></i>Blog</span>
     <h1>News &amp; announcements</h1>
-    <p>Career milestones, publications, and recognitions, most recent first.</p>
+    <p>Career milestones, publications, and recognitions, most recent first. Filter by topic, or click Read More for the full story.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="news-feed">
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card is-latest"><span class="news-latest-ribbon"><i class="fa-solid fa-bolt"></i> LATEST</span>
-      <div class="news-icon-badge"><i class="fa-solid fa-handshake"></i></div>
+    <div class="blog-layout">
+      <div class="news-feed">
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card is-latest" id="news-8" data-category="role"><span class="news-latest-ribbon"><i class="fa-solid fa-bolt"></i> LATEST</span>
       <div class="news-meta">
         <span class="news-category cat-role">New Engagement</span>
-        <time class="news-time js-relative-time" datetime="2026-07-07T10:00:00"><i class="fa-regular fa-clock"></i>&nbsp;July 7, 2026<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2026-07-07T10:00:00">July 7, 2026<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;54 views</span>
       </div>
       <h3>Started as Individual Consultant on the ICSMIS Dashboard for FCSC &amp; UNDP</h3>
-      <p>Excited to begin a new consulting engagement designing and building the enterprise executive dashboard for ICSMIS, a UNDP-funded initiative with Ethiopia's Federal Civil Service Commission &mdash; owning the project end to end, from requirements through deployment.</p>
+      <p>Excited to begin a new consulting engagement designing and building the enterprise executive dashboard for ICSMIS, a UNDP-funded initiative with Ethiopia's Federal Civil Service Commission.</p>
+      <div class="news-detail" id="news-8-detail">
+        <p>The role covers the full software development life cycle &mdash; requirements gathering with FCSC stakeholders, full-stack development, integrating multiple government modules via REST APIs, and delivering the KPI visualizations executives now use for day-to-day decisions.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-8-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-8" data-share-title="Started as Individual Consultant on the ICSMIS Dashboard for FCSC &amp; UNDP">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card">
-      <div class="news-icon-badge"><i class="fa-solid fa-briefcase"></i></div>
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card" id="news-7" data-category="role">
       <div class="news-meta">
         <span class="news-category cat-role">New Role</span>
-        <time class="news-time js-relative-time" datetime="2026-04-17T09:00:00"><i class="fa-regular fa-clock"></i>&nbsp;April 17, 2026<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2026-04-17T09:00:00">April 17, 2026<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;41 views</span>
       </div>
       <h3>Joined Tria Trading PLC as Software Business Analyst</h3>
-      <p>Started leading business requirements analysis for the SmartOffice enterprise platform, now deployed across major Ethiopian public institutions including Addis Ababa City Administration and the Ministry of Agriculture.</p>
+      <p>Started leading business requirements analysis for the SmartOffice enterprise platform, now deployed across major Ethiopian public institutions.</p>
+      <div class="news-detail" id="news-7-detail">
+        <p>SmartOffice's Record, Document, and Performance Management Systems are now live at Addis Ababa City Administration, the Ministry of Agriculture, and Ethio&ndash;Djibouti Railway Services &mdash; with more institutions onboarding this year.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-7-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-7" data-share-title="Joined Tria Trading PLC as Software Business Analyst">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card">
-      <div class="news-icon-badge"><i class="fa-solid fa-chalkboard-user"></i></div>
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card" id="news-6" data-category="training">
       <div class="news-meta">
         <span class="news-category cat-training">Certification</span>
-        <time class="news-time js-relative-time" datetime="2026-03-15T14:00:00"><i class="fa-regular fa-clock"></i>&nbsp;March 15, 2026<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2026-03-15T14:00:00">March 15, 2026<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;63 views</span>
       </div>
       <h3>Completed the SNA Africa Training-of-Trainers Programme</h3>
-      <p>Graduated from the Scuola Nazionale dell'Amministrazione's e-learning programme on the Digitalisation of Public Administration, delivered with the Ethiopian Civil Service University &mdash; now qualified to deliver this training to others.</p>
+      <p>Graduated from the Scuola Nazionale dell'Amministrazione's e-learning programme on the Digitalisation of Public Administration.</p>
+      <div class="news-detail" id="news-6-detail">
+        <p>Delivered in collaboration with the Ethiopian Civil Service University across three phases &mdash; covering cybersecurity, AI, cloud computing, digital identity, and EU regulatory frameworks &mdash; I'm now qualified to deliver this training to others.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-6-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-6" data-share-title="Completed the SNA Africa Training-of-Trainers Programme">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card">
-      <div class="news-icon-badge"><i class="fa-solid fa-chalkboard"></i></div>
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card" id="news-5" data-category="role">
       <div class="news-meta">
         <span class="news-category cat-role">New Role</span>
-        <time class="news-time js-relative-time" datetime="2026-02-08T08:00:00"><i class="fa-regular fa-clock"></i>&nbsp;February 8, 2026<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2026-02-08T08:00:00">February 8, 2026<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;37 views</span>
       </div>
       <h3>Appointed Lecturer at the Ethiopian Public Service University</h3>
       <p>Moved into the College of Computing and Digitalization to teach Information Technology, Computer Science, and Computer Networks &amp; Communications.</p>
+      <div class="news-detail" id="news-5-detail">
+        <p>Picking up where six years at Debark University left off, now shaping curriculum for the next generation of Ethiopian IT and network engineers.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-5-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-5" data-share-title="Appointed Lecturer at the Ethiopian Public Service University">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card">
-      <div class="news-icon-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card" id="news-4" data-category="milestone">
       <div class="news-meta">
         <span class="news-category cat-milestone">Milestone</span>
-        <time class="news-time js-relative-time" datetime="2025-06-20T12:00:00"><i class="fa-regular fa-clock"></i>&nbsp;June 20, 2025<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2025-06-20T12:00:00">June 20, 2025<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;29 views</span>
       </div>
       <h3>Awarded the Higher Diploma in Teaching in Higher Education (HDP)</h3>
-      <p>Successfully completed pedagogical training for higher-education instructors at Debark University, sharpening how I design and deliver courses.</p>
+      <p>Successfully completed pedagogical training for higher-education instructors at Debark University.</p>
+      <div class="news-detail" id="news-4-detail">
+        <p>Completed alongside a full-time lecturing role, sharpening how I design courses, assess students, and run a classroom.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-4-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-4" data-share-title="Awarded the Higher Diploma in Teaching in Higher Education (HDP)">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card">
-      <div class="news-icon-badge"><i class="fa-solid fa-award"></i></div>
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card" id="news-3" data-category="recognition">
       <div class="news-meta">
         <span class="news-category cat-recognition">Recognition</span>
-        <time class="news-time js-relative-time" datetime="2025-05-08T10:00:00"><i class="fa-regular fa-clock"></i>&nbsp;May 8, 2025<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2025-05-08T10:00:00">May 8, 2025<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;48 views</span>
       </div>
       <h3>Received a Certificate of Digital Transformation</h3>
-      <p>Honored by Debark University and the North Gondar Zone Communication Department for developing and hosting the North Gondar Zone government communication website, still live and under my administration today.</p>
+      <p>Honored by Debark University and the North Gondar Zone Communication Department for developing and hosting the North Gondar Zone government website.</p>
+      <div class="news-detail" id="news-3-detail">
+        <p>The site is still live and under my administration today, continuing to support communication between the zone government and its citizens.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-3-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-3" data-share-title="Received a Certificate of Digital Transformation">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card">
-      <div class="news-icon-badge"><i class="fa-solid fa-book"></i></div>
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card" id="news-2" data-category="publication">
       <div class="news-meta">
         <span class="news-category cat-publication">Publication</span>
-        <time class="news-time js-relative-time" datetime="2025-03-02T09:00:00"><i class="fa-regular fa-clock"></i>&nbsp;March 2, 2025<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2025-03-02T09:00:00">March 2, 2025<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;112 views</span>
       </div>
       <h3>Published in IEEE Access: Securing SDN-Edge-IoT Against DDoS Attacks</h3>
-      <p>My MSc thesis &mdash; a machine-learning scheme to detect and mitigate DDoS attacks in SDN-Edge-IoT environments &mdash; was published in IEEE Access, vol. 13, pp. 10194&ndash;10214.</p>
+      <p>My MSc thesis &mdash; a machine-learning scheme to detect and mitigate DDoS attacks in SDN-Edge-IoT environments &mdash; was published in IEEE Access.</p>
+      <div class="news-detail" id="news-2-detail">
+        <p>The paper appears in IEEE Access, volume 13, pages 10194&ndash;10214, and now anchors my ongoing research into IoT and network security.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-2-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-2" data-share-title="Published in IEEE Access: Securing SDN-Edge-IoT Against DDoS Attacks">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
-    <!-- ============ NEWS ITEM: copy this whole <article> block, edit the fields, and paste it
-         at the TOP of the list below (right after <div class="news-feed">) to add new news. ============ -->
-    <article class="news-card">
-      <div class="news-icon-badge"><i class="fa-solid fa-award"></i></div>
+    <!-- ============ NEWS ITEM: copy this whole <article> block (up to the closing </article>),
+         edit the fields, and paste it right after <div class="news-feed"> to publish new news. ============ -->
+    <article class="news-card" id="news-1" data-category="recognition">
       <div class="news-meta">
         <span class="news-category cat-recognition">Recognition</span>
-        <time class="news-time js-relative-time" datetime="2025-01-10T11:00:00"><i class="fa-regular fa-clock"></i>&nbsp;January 10, 2025<span class="js-relative-label"></span></time>
+        <span><i class="fa-regular fa-calendar"></i>&nbsp;<time class="js-relative-time" datetime="2025-01-10T11:00:00">January 10, 2025<span class="js-relative-label"></span></time></span>
+        <span><i class="fa-regular fa-eye"></i>&nbsp;33 views</span>
       </div>
       <h3>Recognized as Editorial Board Member, Deep Science Publishing</h3>
-      <p>Honored to join the Editorial Board in recognition of ongoing contributions to the peer-review process and editorial responsibilities.</p>
+      <p>Honored to join the Editorial Board in recognition of ongoing contributions to the peer-review process.</p>
+      <div class="news-detail" id="news-1-detail">
+        <p>The role involves editorial responsibilities alongside my existing peer-review work for IEEE Access, IEEE IoT Journal, and several international conferences.</p>
+      </div>
+      <div class="news-actions">
+        <button type="button" class="news-readmore" data-target="news-1-detail">
+          <i class="fa-solid fa-arrow-right icon"></i><span class="news-readmore-label">Read More</span>
+        </button>
+        <button type="button" class="news-share" data-share-id="news-1" data-share-title="Recognized as Editorial Board Member, Deep Science Publishing">
+          <i class="fa-solid fa-share-nodes"></i><span class="news-share-label">Share</span>
+        </button>
+      </div>
     </article>
+      </div>
+      <aside class="blog-sidebar">
+        <div class="sidebar-card">
+      <h4><i class="fa-solid fa-clock-rotate-left icon" style="color:var(--signal-dark);margin-right:8px;"></i>Recent Posts</h4>
+      
+      <a class="recent-post-item" href="#news-8">
+        <span class="rp-title">Started as Individual Consultant on the ICSMIS Dashboard for FCSC &amp; UNDP</span>
+        <span class="rp-date"><i class="fa-regular fa-calendar"></i>July 7, 2026</span>
+      </a>
+      <a class="recent-post-item" href="#news-7">
+        <span class="rp-title">Joined Tria Trading PLC as Software Business Analyst</span>
+        <span class="rp-date"><i class="fa-regular fa-calendar"></i>April 17, 2026</span>
+      </a>
+      <a class="recent-post-item" href="#news-6">
+        <span class="rp-title">Completed the SNA Africa Training-of-Trainers Programme</span>
+        <span class="rp-date"><i class="fa-regular fa-calendar"></i>March 15, 2026</span>
+      </a>
+      <a class="recent-post-item" href="#news-5">
+        <span class="rp-title">Appointed Lecturer at the Ethiopian Public Service University</span>
+        <span class="rp-date"><i class="fa-regular fa-calendar"></i>February 8, 2026</span>
+      </a>
+    </div>
+        <div class="sidebar-card">
+      <h4><i class="fa-solid fa-tags icon" style="color:var(--signal-dark);margin-right:8px;"></i>Topics</h4>
+      <div class="topic-pill-row"><span class="topic-pill active" data-filter="all">All Posts</span><span class="topic-pill" data-filter="role">New Roles (3)</span><span class="topic-pill" data-filter="publication">Publications (1)</span><span class="topic-pill" data-filter="recognition">Recognition (2)</span><span class="topic-pill" data-filter="training">Training (1)</span><span class="topic-pill" data-filter="milestone">Milestones (1)</span></div>
+    </div>
+      </aside>
     </div>
   </div>
 </section>

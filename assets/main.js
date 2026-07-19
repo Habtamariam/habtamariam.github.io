@@ -67,4 +67,51 @@ document.addEventListener('DOMContentLoaded', function () {
     var badge = el.querySelector('.js-relative-label');
     if (badge && label) { badge.textContent = '\u00b7 ' + label; }
   });
+
+  // Blog: Read More / Show Less toggle
+  document.querySelectorAll('.news-readmore').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var targetId = btn.getAttribute('data-target');
+      var detail = document.getElementById(targetId);
+      if (!detail) return;
+      var open = detail.classList.toggle('is-open');
+      btn.classList.toggle('is-open', open);
+      btn.querySelector('.news-readmore-label').textContent = open ? 'Show Less' : 'Read More';
+    });
+  });
+
+  // Blog: Share button (native share sheet if available, else copy link)
+  document.querySelectorAll('.news-share').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var articleId = btn.getAttribute('data-share-id');
+      var title = btn.getAttribute('data-share-title') || document.title;
+      var url = window.location.href.split('#')[0] + '#' + articleId;
+      var label = btn.querySelector('.news-share-label');
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).catch(function () {});
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function () {
+          if (label) {
+            var original = label.textContent;
+            label.textContent = 'Link copied!';
+            setTimeout(function () { label.textContent = original; }, 2000);
+          }
+        });
+      }
+    });
+  });
+
+  // Blog: Topic filter
+  var topicPills = document.querySelectorAll('.topic-pill');
+  topicPills.forEach(function (pill) {
+    pill.addEventListener('click', function () {
+      topicPills.forEach(function (p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      var filter = pill.getAttribute('data-filter');
+      document.querySelectorAll('.news-card').forEach(function (card) {
+        var cat = card.getAttribute('data-category');
+        card.classList.toggle('is-hidden', filter !== 'all' && cat !== filter);
+      });
+    });
+  });
 });
