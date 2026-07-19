@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<!-- © 2026 Habtamu Molla. All rights reserved. This site's design and code are not licensed for reuse or redistribution without permission. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Habtamu Molla</title>
 <meta name="description" content="Get in touch with Habtamu Molla.">
+<meta name="google-site-verification" content="iqMxD6NgY4F2zrNZvsVdarxeiHT7VKi01zDI94SJOY4" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -53,10 +55,10 @@
       <div>
         <div class="sec-head" style="margin-bottom:20px;"><span class="sec-eyebrow mono"><i class="fa-solid fa-comment-dots icon"></i>Direct Contact</span><h2>Reach me directly</h2></div>
         <div class="quick-links" style="flex-direction:column;align-items:flex-start;gap:16px;">
-          <a href="mailto:habtamu.molla@epsu.edu.et"><i class="fa-solid fa-envelope"></i>habtamu.molla@epsu.edu.et</a>
-          <a href="mailto:habtamumullu@gmail.com"><i class="fa-solid fa-envelope"></i>habtamumullu@gmail.com</a>
-          <a href="tel:+251975195143"><i class="fa-solid fa-phone"></i>+251 975 195 143</a>
-          <a href="https://wa.me/251975195143" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+          <a class="js-email " data-u="habtamu.molla" data-d="epsu.edu.et" href="#"><i class="fa-solid fa-envelope"></i><span class="js-contact-label">Loading&hellip;</span></a>
+          <a class="js-email " data-u="habtamumullu" data-d="gmail.com" href="#"><i class="fa-solid fa-envelope"></i><span class="js-contact-label">Loading&hellip;</span></a>
+          <a class="js-tel " data-n="251975195143" data-display="+251 975 195 143" href="#"><i class="fa-solid fa-phone"></i><span class="js-contact-label">Loading&hellip;</span></a>
+          <a class="js-wa " data-n="251975195143" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
           <a href="https://t.me/habtemaryiam" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i>Telegram</a>
           <a href="https://web.facebook.com/habtamu.molla.3133" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i>Facebook</a>
         </div>
@@ -85,7 +87,7 @@
       <p>Fill this in and it opens a pre-filled email in your own mail app, addressed straight to me &mdash; nothing is stored or sent anywhere else.</p>
     </div>
     <div class="grid-2">
-      <form class="contact-form" id="contactForm" data-to="habtamumullu@gmail.com">
+      <form class="contact-form" id="contactForm" data-to-u="habtamumullu" data-to-d="gmail.com">
         <div class="form-row">
           <label for="cf-name">Your Name</label>
           <input type="text" id="cf-name" name="name" placeholder="Jane Doe" required>
@@ -104,7 +106,7 @@
         </div>
         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i>Send Message</button>
         <div class="form-status" id="cf-status"></div>
-        <p class="form-note"><i class="fa-solid fa-circle-info"></i>This opens your email app with the message ready to send to habtamumullu@gmail.com.</p>
+        <p class="form-note"><i class="fa-solid fa-circle-info"></i>This opens your email app with the message ready to send to <a class="js-email " data-u="habtamumullu" data-d="gmail.com" href="#"><span class="js-contact-label">Loading&hellip;</span></a>.</p>
       </form>
       <div class="card" style="align-self:flex-start;">
         <div class="card-icon"><i class="fa-solid fa-circle-check"></i></div>
@@ -115,8 +117,8 @@
         </div>
         <p style="margin-bottom:14px;">In a hurry? Reach me directly instead:</p>
         <div class="quick-links" style="flex-direction:column;align-items:flex-start;gap:12px;">
-          <a href="mailto:habtamumullu@gmail.com"><i class="fa-solid fa-envelope"></i>habtamumullu@gmail.com</a>
-          <a href="https://wa.me/251975195143" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+          <a class="js-email " data-u="habtamumullu" data-d="gmail.com" href="#"><i class="fa-solid fa-envelope"></i><span class="js-contact-label">Loading&hellip;</span></a>
+          <a class="js-wa " data-n="251975195143" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
         </div>
       </div>
     </div>
@@ -151,8 +153,8 @@
     <h2 style="margin-bottom:14px;">Ready to start a conversation?</h2>
     <p style="color:var(--ink-soft);max-width:56ch;margin:0 auto 28px;">Whether it's a full-stack role, a research collaboration, or a digitalization training engagement &mdash; I'd love to hear from you.</p>
     <div class="btn-row" style="justify-content:center;">
-      <a class="btn btn-primary" href="mailto:habtamumullu@gmail.com"><i class="fa-solid fa-paper-plane"></i>Send an Email</a>
-      <a class="btn btn-ghost-light" href="https://wa.me/251975195143" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>Chat on WhatsApp</a>
+      <a class="js-email btn btn-primary" data-u="habtamumullu" data-d="gmail.com" href="#"><i class="fa-solid fa-paper-plane"></i>Send an Email</a>
+      <a class="js-wa btn btn-ghost-light" data-n="251975195143" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>Chat on WhatsApp</a>
       <a class="btn btn-ghost-light" href="https://www.linkedin.com/in/habtamu-molla-511308353/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>Connect on LinkedIn</a>
     </div>
   </div>
@@ -172,7 +174,7 @@
           <a href="https://github.com/Habtamariam" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           <a href="https://web.facebook.com/habtamu.molla.3133" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
           <a href="https://t.me/habtemaryiam" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-          <a href="https://wa.me/251975195143" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="js-wa" data-n="251975195143" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="footer-col">
@@ -188,10 +190,10 @@
       </div>
       <div class="footer-col">
         <h5>Contact</h5>
-        <a href="mailto:habtamu.molla@epsu.edu.et"><i class="fa-solid fa-envelope icon"></i>habtamu.molla@epsu.edu.et</a>
-        <a href="mailto:habtamumullu@gmail.com"><i class="fa-solid fa-envelope icon"></i>habtamumullu@gmail.com</a>
-        <a href="tel:+251975195143"><i class="fa-solid fa-phone icon"></i>+251 975 195 143</a>
-        <a href="https://wa.me/251975195143" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp icon"></i>WhatsApp</a>
+        <a class="js-email " data-u="habtamu.molla" data-d="epsu.edu.et" href="#"><i class="fa-solid fa-envelope icon"></i><span class="js-contact-label">Loading&hellip;</span></a>
+        <a class="js-email " data-u="habtamumullu" data-d="gmail.com" href="#"><i class="fa-solid fa-envelope icon"></i><span class="js-contact-label">Loading&hellip;</span></a>
+        <a class="js-tel " data-n="251975195143" data-display="+251 975 195 143" href="#"><i class="fa-solid fa-phone icon"></i><span class="js-contact-label">Loading&hellip;</span></a>
+        <a class="js-wa " data-n="251975195143" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp icon"></i>WhatsApp</a>
       </div>
       <div class="footer-col">
         <h5>Professional</h5>
@@ -204,7 +206,7 @@
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <span>&copy; <span class="js-year"></span> All rights reserved.</span>
+    <span>&copy; <span class="js-year"></span> Habtamu Molla. All rights reserved.</span>
     <span>Powered By Habtamu Molla, Addis Ababa, Ethiopia.</span>
   </div>
 </footer>

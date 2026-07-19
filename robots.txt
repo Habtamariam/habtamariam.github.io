@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://habtamariam.github.io/sitemap.xml
