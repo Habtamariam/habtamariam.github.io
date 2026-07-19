@@ -236,8 +236,6 @@ p{text-align:justify;text-justify:inter-word;}
 .pub-year{font-family:'IBM Plex Mono';color:var(--signal-dark);font-size:0.85rem;}
 .pub-title{font-weight:600;margin-bottom:5px;}
 .pub-venue{color:var(--ink-soft);font-size:0.88rem;}
-.pub-authors{color:var(--ink-soft);font-size:0.82rem;margin-top:6px;font-style:italic;}
-.pub-authors strong{color:var(--ink);font-style:normal;}
 .pub-link{font-size:0.8rem;color:var(--signal-dark);font-weight:600;display:inline-flex;gap:5px;align-items:center;margin-top:6px;}
 
 /* ---------------- Stat blocks ---------------- */

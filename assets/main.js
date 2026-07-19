@@ -28,44 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Reconstruct obfuscated contact links so the real address/number never
-  // sits as plain text in the page source (basic scrapers only read static HTML).
-  document.querySelectorAll('.js-email').forEach(function (el) {
-    var user = el.getAttribute('data-u');
-    var domain = el.getAttribute('data-d');
-    if (!user || !domain) return;
-    var addr = user + '@' + domain;
-    el.setAttribute('href', 'mailto:' + addr);
-    var label = el.querySelector('.js-contact-label');
-    if (label) { label.textContent = addr; }
-  });
-
-  document.querySelectorAll('.js-tel').forEach(function (el) {
-    var digits = el.getAttribute('data-n');
-    if (!digits) return;
-    el.setAttribute('href', 'tel:+' + digits);
-    var label = el.querySelector('.js-contact-label');
-    if (label) { label.textContent = el.getAttribute('data-display') || ('+' + digits); }
-  });
-
-  document.querySelectorAll('.js-wa').forEach(function (el) {
-    var digits = el.getAttribute('data-n');
-    if (!digits) return;
-    el.setAttribute('href', 'https://wa.me/' + digits);
-  });
-
-  // Light deterrent against casual right-click "Save Image As" on the profile photo
-  var heroNetwork = document.querySelector('.hero-network');
-  if (heroNetwork) {
-    heroNetwork.addEventListener('contextmenu', function (e) { e.preventDefault(); });
-  }
-
   // Contact form -> opens the visitor's email client with a pre-filled message
   var contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    var toUser = contactForm.getAttribute('data-to-u');
-    var toDomain = contactForm.getAttribute('data-to-d');
-    if (toUser && toDomain) { contactForm.setAttribute('data-to', toUser + '@' + toDomain); }
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
       var name = document.getElementById('cf-name').value.trim();
